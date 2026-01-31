@@ -1,0 +1,33 @@
+/* Import Fira Sans - the Metropolis signature font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Fira+Mono&display=swap');
+
+:root {
+    --reveal-background-color: #FAFAFA;
+    --reveal-main-font: 'Fira Sans', sans-serif;
+    --reveal-heading-font: 'Fira Sans', sans-serif;
+    --reveal-main-font-size: 32px;
+    --reveal-main-color: #23373b; /* Dark Slate Blue-Grey */
+    --reveal-heading-color: #23373b;
+    --reveal-heading-text-transform: uppercase;
+    --reveal-heading-font-weight: 400;
+    --reveal-link-color: #EB811B; /* Metropolis Orange */
+    --reveal-progress-color: #EB811B;
+}
+
+/* Style the progress bar to be thick at the top like Beamer Metropolis */
+.reveal .progress {
+    height: 5px !important;
+}
+
+/* Custom header for slide titles to match Beamer frame titles */
+.reveal h2 {
+    border-bottom: 2px solid #EB811B;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+/* Fix for the 70/30 columns you use */
+.column h3 {
+    color: #EB811B;
+    text-transform: none;
+}

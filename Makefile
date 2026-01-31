@@ -15,8 +15,7 @@ all: $(TARGETS)
 # Rule to convert .md to .html
 %.html: %.md
 	$(PANDOC) $< -t revealjs -s -o $@ \
-		-V revealjs-url=$(REVEALJS_DIR) \
-		--metadata title="$(basename $<)"
+		-V revealjs-url=$(REVEALJS_DIR)
 
 # Clean up generated files
 clean:

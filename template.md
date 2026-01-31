@@ -3,7 +3,7 @@ title: "Title"
 author: "Gianluca Della Vedova <br> DISCo, University of Milano - Bicocca"
 format:
   revealjs: 
-    theme: [solarized, custom.scss]
+    theme: [solarized]
     slide-number: true
     code-fold: false
     code-summary: "Code"
@@ -13,6 +13,13 @@ format:
 scrollable: true
 ---
 
+
+# Part {data-background="#23373b" style="color: white;"}
+
+---
+
+## Content Slide
+This slide looks like a standard Metropolis frame.
 
 ## Reading
 
