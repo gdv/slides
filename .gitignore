@@ -11,3 +11,4 @@ reveal.js/
 # OS files
 .DS_Store
 Thumbs.db
+/20??-??-??-*.html
