@@ -1,0 +1,136 @@
+---
+title: "Title"
+author: "Gianluca Della Vedova <br> DISCo, University of Milano - Bicocca"
+format:
+  revealjs: 
+    theme: [solarized, custom.scss]
+    slide-number: true
+    code-fold: false
+    code-summary: "Code"
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+scrollable: true
+---
+
+
+## Reading
+
+
+cut to subscriptions, except Elsevier etc.
+https://www.science.org/content/article/doge-order-leads-journal-cancellations-u-s-agricultural-library
+
+Move away from US cloud
+https://www.reuters.com/world/europe/dutch-parliament-calls-end-reliance-us-software-2025-03-18/
+
+
+## UNESCO Recommendation on Open Science
+
+![](images/open_science/UNESCO_opne_science.png){height=550}
+
+:::footer
+[UNESCO](https://unesdoc.unesco.org/ark:/48223/pf0000379949)
+:::
+
+
+## What is open science?
+
+
+
+- data are shared, indexed, properly archived and discoverable
+- same for scientific code
+- analyses and workflows to process data are also shared
+- reagents (e.g. plasmids), strains (e.g. mutants) shared
+- open-source software
+- maximise reproducibility
+- text + data + code = publication
+- publications openly accessible, not behind a paywall
+- publishing is affordable and not distorting (not hijacked by corporate for-profit publishers)
+- preprints = publication, followed by post-publication peer review
+
+## The Budapest Open Access Initiative
+
+::: columns
+:::{.column width=70%}
+![](images/open_science/BOAI.png)
+- https://www.budapestopenaccessinitiative.org/
+<br>*February 14, 2002*
+<br>Budapest, Hungary
+
+::: 
+:::{.column width=30%}
+
+- removing access barriers to literature
+- free and unrestricted online availability = **open access**
+- *experiments show that the overall costs of providing open access to this literature are far lower than the costs of traditional forms of dissemination*
+- opportunity to save money and expand the scope of dissemination 
+- recommendations: **self-archiving** (I.) and a new generation of **open-access journals** (II.)
+:::
+:::
+
+
+## The **FAIR** Guiding Principles for scientific data management and stewardship
+
+
+::: columns
+:::{.column width=70%}
+![](images/open_science/FAIR_principles.png)
+::: 
+:::{.column width=30%}
+- emphasis on ability to programmatically find and use the data
+- supporting its reuse
+- accurare description
+- https://www.go-fair.org/fair-principles/
+:::
+:::
+
+:::footer
+[Wilkinson et al. 2016](https://www.nature.com/articles/sdata201618)
+:::
+
+
+## Code is very often not shared or not shared stably
+
+::: columns
+:::{.column width=50%}
+![](images/Stodden_PNAS.png){height=200}
+
+- study to assess the effectiveness of code sharing policy
+- a random sample of 204 *Science* papers
+- able to obtain artifacts from 44% 
+- able to reproduce the findings for 26%
+:::
+:::{.column width=50%}
+- **Typical responses:**
+
+::: {.incremental}
+  - *"When you approach a PI for the source codes and raw data, you better explain who you are, whom you work for, why you need the data and what you are going to do with it."*
+
+  - *"I have to say that this is a very unusual request without any explanation! Please ask your supervisor to send me an email with a detailed, and I mean detailed, explanation."*
+
+  - *"The data files remains our property and are not deposited for free access. Please, let me know the purpose you want to get the file and we will see how we can help you."*
+
+  - *"We do not typically share our internal data or code with people outside our collaboration."*
+
+:::
+:::
+:::
+
+
+::: footer
+[Stodden et al. (2018) ](https://doi.org/10.1073/pnas.1708290115)
+:::
+
+
+## Gene name errors are widespread in the scientific literature
+
+<br><br>
+
+![](images/13059_2016_1044_Fig1_HTML.webp)
+
+
+::: aside
+[Ziemann et al. (2016)](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7)
+:::
+
+
