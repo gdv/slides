@@ -20,7 +20,7 @@ all: $(TARGETS)
 	-V theme=white \
 	-c $(CUSTOM_CSS) \
 	--mathjax \
-	--highlight-style pygments \
+	--highlight-style monokai \
 	--metadata title="$(basename $<)"
 
 # Clean up generated files
