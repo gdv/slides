@@ -1,0 +1,41 @@
+name: Deploy Presentation
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive  # This pulls the reveal.js folder
+
+      - name: Install Pandoc
+        run: sudo apt-get install pandoc
+
+      - name: Build Slides
+        run: |
+          pandoc slides.md -t revealjs -s -o index.html -V revealjs-url=reveal.js
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.' # Uploads everything including the submodule and index.html
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
