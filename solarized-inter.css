@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fira+Mono&display=swap');
+
+:root {
+    /* Solarized Light Palette */
+    --reveal-background-color: #fdf6e3;
+    --reveal-main-font: 'Inter', sans-serif;
+    --reveal-heading-font: 'Inter', sans-serif;
+    --reveal-main-color: #657b83;       /* Solarized base00 */
+    --reveal-heading-color: #073642;    /* Solarized base02 */
+    --reveal-heading-text-transform: none;
+    --reveal-link-color: #268bd2;       /* Solarized blue */
+    --reveal-progress-color: #268bd2;
+    --reveal-selection-background-color: #eee8d5;
+}
+
+/* Enhancing Legibility */
+.reveal p, .reveal li {
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+.reveal h2 {
+    color: #cb4b16 !important; /* Solarized orange for slide titles */
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+/* Custom 70/30 Column Formatting */
+.column h3 {
+    color: #b58900; /* Solarized yellow */
+}

@@ -2,7 +2,7 @@
 PANDOC = pandoc
 REVEALJS_DIR = reveal.js
 OUTPUT_DIR = .
-CUSTOM_CSS = metropolis.css
+CUSTOM_CSS = solarized-inter.css
 
 # Find all markdown files in the current directory
 # All presentation filenames are YYYY-MM-DD-title.md
@@ -20,14 +20,13 @@ BASE_URL = https://$(USER).github.io/$(REPO)
 all: $(TARGETS)
 
 
+
 %.html: %.md
 	$(PANDOC) $< -t revealjs -s -o $@ \
 	-V revealjs-url=$(REVEALJS_DIR) \
-	-V theme=black \
+	-V theme=solarized \
 	-c $(CUSTOM_CSS) \
-	--mathjax \
-	--highlight-style breezedark \
-	--metadata title="$(basename $<)"
+	--highlight-style tango
 
 update-readme:
 	@echo "# Gianluca Della Vedova" > README.md
