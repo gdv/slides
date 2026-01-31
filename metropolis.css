@@ -46,3 +46,14 @@
     border-radius: 4px;
     padding: 10px;
 }
+
+.reveal pre {
+    box-shadow: none; /* Removes the default reveal.js shadow for a flatter look */
+    border: 1px solid #EB811B; /* Adds a thin orange border to code blocks */
+    width: 90%;
+}
+
+.reveal code {
+    font-family: 'Fira Mono', monospace;
+    text-transform: none; /* Ensures code isn't affected by heading transforms */
+}
