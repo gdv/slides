@@ -23,7 +23,7 @@ all: $(TARGETS)
 %.html: %.md
 	$(PANDOC) $< -t revealjs -s -o $@ \
 	-V revealjs-url=$(REVEALJS_DIR) \
-	-V theme=white \
+	-V theme=black \
 	-c $(CUSTOM_CSS) \
 	--mathjax \
 	--highlight-style breezedark \
