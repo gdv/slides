@@ -1,33 +1,48 @@
-/* Import Fira Sans - the Metropolis signature font */
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Fira+Mono&display=swap');
 
 :root {
-    --reveal-background-color: #FAFAFA;
+    /* Metropolis Dark Palette */
+    --reveal-background-color: #23373b; /* Dark Slate Base */
     --reveal-main-font: 'Fira Sans', sans-serif;
     --reveal-heading-font: 'Fira Sans', sans-serif;
-    --reveal-main-font-size: 32px;
-    --reveal-main-color: #23373b; /* Dark Slate Blue-Grey */
-    --reveal-heading-color: #23373b;
+    --reveal-main-color: #EBEDEE;       /* Near White Text */
+    --reveal-heading-color: #EBEDEE;
     --reveal-heading-text-transform: uppercase;
-    --reveal-heading-font-weight: 400;
-    --reveal-link-color: #EB811B; /* Metropolis Orange */
+    --reveal-link-color: #EB811B;       /* Metropolis Orange */
+    --reveal-selection-background-color: #EB811B;
+    --reveal-selection-color: #ffffff;
     --reveal-progress-color: #EB811B;
 }
 
-/* Style the progress bar to be thick at the top like Beamer Metropolis */
+/* Thick progress bar at the top */
 .reveal .progress {
     height: 5px !important;
 }
 
-/* Custom header for slide titles to match Beamer frame titles */
+/* Frame Title Styling */
 .reveal h2 {
     border-bottom: 2px solid #EB811B;
     padding-bottom: 10px;
     text-align: left;
 }
 
-/* Fix for the 70/30 columns you use */
+/* MathJax Color Overrides (Crucial for Dark Mode) */
+.MathJax {
+    color: #EBEDEE !important;
+    outline: 0;
+}
+
+/* Styling for the 70/30 Columns */
 .column h3 {
     color: #EB811B;
     text-transform: none;
+}
+
+/* Code block adjustments for dark background */
+.reveal pre code {
+    background: #2d3e41;
+    color: #EBEDEE;
+    border-radius: 4px;
+    padding: 10px;
 }
