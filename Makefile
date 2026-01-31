@@ -24,6 +24,9 @@ all: $(TARGETS)
 %.html: %.md
 	$(PANDOC) $< -t revealjs -s -o $@ \
 	-V revealjs-url=$(REVEALJS_DIR) \
+	-V width=1280 \
+	-V height=720 \
+	-V margin=0.1 \
 	-V theme=solarized \
 	-c $(CUSTOM_CSS) \
 	--highlight-style tango

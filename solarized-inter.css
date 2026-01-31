@@ -5,28 +5,36 @@
     --reveal-background-color: #fdf6e3;
     --reveal-main-font: 'Inter', sans-serif;
     --reveal-heading-font: 'Inter', sans-serif;
-    --reveal-main-color: #657b83;       /* Solarized base00 */
-    --reveal-heading-color: #073642;    /* Solarized base02 */
-    --reveal-heading-text-transform: none;
-    --reveal-link-color: #268bd2;       /* Solarized blue */
-    --reveal-progress-color: #268bd2;
-    --reveal-selection-background-color: #eee8d5;
+    --reveal-main-color: #657b83;
+    --reveal-heading-color: #073642;
+    --reveal-link-color: #268bd2;
+
+    /* Font Size Adjustments */
+    --reveal-main-font-size: 24px;         /* Default is usually 40px */
+    --reveal-heading1-size: 2.5em;         /* Title slides */
+    --reveal-heading2-size: 1.6em;         /* Slide titles */
+    --reveal-heading3-size: 1.2em;         /* Column headers */
+    --reveal-block-margin: 15px;
 }
 
-/* Enhancing Legibility */
+/* Fine-tuning for the smaller font */
 .reveal p, .reveal li {
-    line-height: 1.5;
-    letter-spacing: -0.01em;
+    line-height: 1.4;
+    font-weight: 400;
 }
 
 .reveal h2 {
-    color: #cb4b16 !important; /* Solarized orange for slide titles */
+    color: #cb4b16 !important;
     font-weight: 600;
-    text-align: left;
-    margin-bottom: 40px;
+    border-bottom: 1px solid #eee8d5; /* Thinner line for smaller font */
+    padding-bottom: 5px;
 }
 
-/* Custom 70/30 Column Formatting */
-.column h3 {
-    color: #b58900; /* Solarized yellow */
+/* Ensure code and math don't look massive compared to the new text size */
+.reveal code {
+    font-size: 0.85em;
+}
+
+.MathJax {
+    font-size: 0.9em !important;
 }
