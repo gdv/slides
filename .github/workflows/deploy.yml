@@ -22,7 +22,7 @@ jobs:
 
       - name: Build Slides
         run: |
-          pandoc slides.md -t revealjs -s -o index.html -V revealjs-url=reveal.js
+          make
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
