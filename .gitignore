@@ -1,0 +1,13 @@
+# Reveal.js library (download separately)
+reveal.js/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
